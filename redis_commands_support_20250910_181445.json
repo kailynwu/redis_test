@@ -1,0 +1,176 @@
+{
+  "string": [
+    {
+      "command": "set",
+      "supported": true
+    },
+    {
+      "command": "get",
+      "supported": true
+    },
+    {
+      "command": "append",
+      "supported": true
+    },
+    {
+      "command": "incr",
+      "supported": true
+    },
+    {
+      "command": "decr",
+      "supported": true
+    },
+    {
+      "command": "strlen",
+      "supported": true
+    }
+  ],
+  "hash": [
+    {
+      "command": "hset",
+      "supported": true
+    },
+    {
+      "command": "hget",
+      "supported": true
+    },
+    {
+      "command": "hgetall",
+      "supported": true
+    },
+    {
+      "command": "hkeys",
+      "supported": true
+    },
+    {
+      "command": "hvals",
+      "supported": true
+    },
+    {
+      "command": "hdel",
+      "supported": true
+    }
+  ],
+  "list": [
+    {
+      "command": "lpush",
+      "supported": true
+    },
+    {
+      "command": "rpush",
+      "supported": true
+    },
+    {
+      "command": "lpop",
+      "supported": true
+    },
+    {
+      "command": "rpop",
+      "supported": true
+    },
+    {
+      "command": "llen",
+      "supported": true
+    },
+    {
+      "command": "lrange",
+      "supported": true
+    }
+  ],
+  "set": [
+    {
+      "command": "sadd",
+      "supported": true
+    },
+    {
+      "command": "smembers",
+      "supported": true
+    },
+    {
+      "command": "sismember",
+      "supported": true
+    },
+    {
+      "command": "scard",
+      "supported": true
+    },
+    {
+      "command": "srem",
+      "supported": true
+    }
+  ],
+  "zset": [
+    {
+      "command": "zadd",
+      "supported": true
+    },
+    {
+      "command": "zrange",
+      "supported": true
+    },
+    {
+      "command": "zscore",
+      "supported": true
+    },
+    {
+      "command": "zcard",
+      "supported": true
+    },
+    {
+      "command": "zrem",
+      "supported": true
+    }
+  ],
+  "keys": [
+    {
+      "command": "keys",
+      "supported": true
+    },
+    {
+      "command": "exists",
+      "supported": true
+    },
+    {
+      "command": "expire",
+      "supported": true
+    },
+    {
+      "command": "ttl",
+      "supported": true
+    },
+    {
+      "command": "del",
+      "supported": true
+    }
+  ],
+  "transaction": [
+    {
+      "command": "multi",
+      "supported": false
+    },
+    {
+      "command": "exec",
+      "supported": false
+    },
+    {
+      "command": "discard",
+      "supported": false
+    }
+  ],
+  "pubsub": [
+    {
+      "command": "publish",
+      "supported": true
+    },
+    {
+      "command": "subscribe",
+      "supported": false
+    }
+  ],
+  "script": [
+    {
+      "command": "eval",
+      "supported": false
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "start_time": "2025-09-10 18:14:44",
+  "end_time": "2025-09-10 18:14:45",
+  "total_tests": 30,
+  "passed_tests": 30,
+  "failed_tests": 0,
+  "test_details": [
+    {
+      "name": "SET/GET",
+      "status": "PASSED",
+      "message": "期望值: Hello Redis, 实际值: Hello Redis"
+    },
+    {
+      "name": "APPEND",
+      "status": "PASSED",
+      "message": "期望值: Hello Redis! Testing..., 实际值: Hello Redis! Testing..."
+    },
+    {
+      "name": "INCR",
+      "status": "PASSED",
+      "message": "期望值: 101, 实际值: 101"
+    },
+    {
+      "name": "DECR",
+      "status": "PASSED",
+      "message": "期望值: 100, 实际值: 100"
+    },
+    {
+      "name": "STRLEN",
+      "status": "PASSED",
+      "message": "期望值: 23, 实际值: 23"
+    },
+    {
+      "name": "HSET/HGET",
+      "status": "PASSED",
+      "message": "期望值: Redis, 实际值: Redis"
+    },
+    {
+      "name": "HGETALL",
+      "status": "PASSED",
+      "message": "期望值: {'name': 'Redis', 'version': '7.0'}, 实际值: {'name': 'Redis', 'version': '7.0'}"
+    },
+    {
+      "name": "HKEYS",
+      "status": "PASSED",
+      "message": "期望值: ['name', 'version'], 实际值: ['name', 'version']"
+    },
+    {
+      "name": "HVALS",
+      "status": "PASSED",
+      "message": "期望值: ['7.0', 'Redis'], 实际值: ['7.0', 'Redis']"
+    },
+    {
+      "name": "HDEL",
+      "status": "PASSED",
+      "message": "期望值: {'name': 'Redis'}, 实际值: {'name': 'Redis'}"
+    },
+    {
+      "name": "LPUSH/RPUSH/LRANGE",
+      "status": "PASSED",
+      "message": "期望值: ['item0', 'item1', 'item2'], 实际值: ['item0', 'item1', 'item2']"
+    },
+    {
+      "name": "LLEN",
+      "status": "PASSED",
+      "message": "期望值: 3, 实际值: 3"
+    },
+    {
+      "name": "LPOP",
+      "status": "PASSED",
+      "message": "期望值: item0, 实际值: item0"
+    },
+    {
+      "name": "RPOP",
+      "status": "PASSED",
+      "message": "期望值: item2, 实际值: item2"
+    },
+    {
+      "name": "SADD/SMEMBERS",
+      "status": "PASSED",
+      "message": "期望值: ['member1', 'member2', 'member3'], 实际值: ['member1', 'member2', 'member3']"
+    },
+    {
+      "name": "SISMEMBER",
+      "status": "PASSED",
+      "message": "member2应该存在，member4应该不存在"
+    },
+    {
+      "name": "SCARD",
+      "status": "PASSED",
+      "message": "期望值: 3, 实际值: 3"
+    },
+    {
+      "name": "SREM",
+      "status": "PASSED",
+      "message": "期望值: 2, 实际值: 2"
+    },
+    {
+      "name": "ZADD/ZRANGE",
+      "status": "PASSED",
+      "message": "期望值: [('member2', 5.0), ('member1', 10.0), ('member3', 15.0)], 实际值: [('member2', 5.0), ('member1', 10.0), ('member3', 15.0)]"
+    },
+    {
+      "name": "ZSCORE",
+      "status": "PASSED",
+      "message": "期望值: 10.0, 实际值: 10.0"
+    },
+    {
+      "name": "ZCARD",
+      "status": "PASSED",
+      "message": "期望值: 3, 实际值: 3"
+    },
+    {
+      "name": "ZREM",
+      "status": "PASSED",
+      "message": "期望值: 2, 实际值: 2"
+    },
+    {
+      "name": "KEYS",
+      "status": "PASSED",
+      "message": "期望值: ['test:key1', 'test:key2'], 实际值: ['test:key1', 'test:key2']"
+    },
+    {
+      "name": "EXISTS",
+      "status": "PASSED",
+      "message": "test:key1应该存在，non_existent_key应该不存在"
+    },
+    {
+      "name": "EXPIRE/TTL",
+      "status": "PASSED",
+      "message": "TTL应该大于0，实际值: 5"
+    },
+    {
+      "name": "DEL",
+      "status": "PASSED",
+      "message": "test:key2应该已被删除"
+    },
+    {
+      "name": "事务执行",
+      "status": "PASSED",
+      "message": "事务执行结果不符合预期: [True, 'before', 10, '10']"
+    },
+    {
+      "name": "事务放弃",
+      "status": "PASSED",
+      "message": "期望值: before, 实际值: before"
+    },
+    {
+      "name": "PUBLISH",
+      "status": "PASSED",
+      "message": "发布消息失败，返回值: 1"
+    },
+    {
+      "name": "Lua脚本执行",
+      "status": "PASSED",
+      "message": "期望值: Lua Value, 实际值: Lua Value"
+    }
+  ]
+}
